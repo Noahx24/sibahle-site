@@ -1272,9 +1272,7 @@ export default function App() {
       </main>
 
       <Footer/>
-      <button className="fab" type="button" onClick={openModal} aria-label="Open consultation form">
-        Request a Consultation
-      </button>
+
 
       {modal && <Modal onClose={closeModal}/>}
     </>
