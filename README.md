@@ -1,18 +1,65 @@
-# React + Vite
+# Sibahle Digital — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Stack:** React 19 + Vite + GitHub Pages
 
-Currently, two official plugins are available:
+**Live site:** https://sibahledigital.co.za
+**Deployment branch:** `gh-pages`
+**Source branch:** `main` (or your working branch)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## After every update
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+npm run build
+npm run deploy
+```
 
-Note: This will impact Vite dev & build performances.
+Site updates within 1–2 minutes of running deploy.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local development
+
+```bash
+npm install       # first time only
+npm run dev       # starts local server at http://localhost:5173
+```
+
+---
+
+## File to edit
+
+All website content lives in one file:
+
+```
+src/App.jsx
+```
+
+Design tokens (colours, spacing) are in the `T` object at the top of App.jsx.
+
+---
+
+## Deployment explained
+
+| Command          | What it does                                      |
+|------------------|---------------------------------------------------|
+| `npm run build`  | Compiles React → static HTML/CSS/JS into `dist/` |
+| `npm run deploy` | Pushes `dist/` to the `gh-pages` branch on GitHub |
+
+GitHub Pages serves the `gh-pages` branch automatically.
+The custom domain `sibahledigital.co.za` is set via the `homepage`
+field in `package.json` and your DNS settings.
+
+---
+
+## If the site doesn't update after deploy
+
+1. Check GitHub → Settings → Pages — confirm source is `gh-pages` branch
+2. Wait 2–3 minutes and hard refresh (Ctrl+Shift+R / Cmd+Shift+R)
+3. Check the Actions tab on GitHub for any deploy errors
+
+---
+
+## Never edit the `gh-pages` branch directly.
+## Always edit `main`, build, then deploy.
