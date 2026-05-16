@@ -502,8 +502,8 @@ function Solutions() {
     {
       cat:"Custom Application Development",
       hl:"A business problem that doesn't fit any existing product",
-      desc:"We scope, design and build from scratch. Any industry — financial services, logistics, healthcare, education, government. Delivered on AWS with full source code ownership transferred to the client.",
-      tags:["Bespoke Build","Any Industry","AWS","Full Ownership"],
+      desc:"We scope, design and build from scratch. Any industry — financial services, logistics, healthcare, education, government. Delivered on cloud infrastructure  with full source code ownership transferred to the client.",
+      tags:["Bespoke Build","Any Industry","Cloud Infrastructure","Full Ownership"],
     },
     {
       cat:"System Integration",
@@ -602,9 +602,9 @@ function WhoWeWorkWith() {
 /* ─── PROCESS ────────────────────────────────────────────── */
 function Process() {
   const steps = [
-    { n:"01", t:"Understand the Problem",  d:"We start by listening. We map your workflows and identify the true source of friction — before writing a line of code." },
+    { n:"01", t:"Understand the Problem",  d:"We start by listening. We map your workflows and identify the true source of friction  before writing a line of code." },
     { n:"02", t:"Design the System",        d:"We architect a solution built around your operational reality, choosing the right tools and platform for your specific challenge." },
-    { n:"03", t:"Build and Configure",      d:"We build, configure and customise — leveraging proven platforms where possible and building custom where necessary." },
+    { n:"03", t:"Build and Configure",      d:"We build, configure and customise, leveraging proven platforms where possible and building custom where necessary." },
     { n:"04", t:"Migrate and Integrate",    d:"We move your existing data cleanly and connect the new system to your existing tools through secure API integrations." },
     { n:"05", t:"Deploy, Train, Support",   d:"We go live with you, train your team, and provide ongoing support and maintenance throughout the contract period." },
   ];
@@ -672,7 +672,7 @@ function CTABanner({ onConsult }) {
           Have a business problem worth solving?
         </h2>
         <p className="body-text" style={{maxWidth:520,margin:"0 auto 48px"}}>
-          Let's start with a conversation. No obligations — just a clear-eyed look at your challenge and whether we can build something that eliminates it.
+          Let's start with a conversation. No obligations yet, just a clear-eyed look at your challenge and whether we can build something that eliminates it.
         </p>
         <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
           <button className="btn-p" onClick={onConsult}>
